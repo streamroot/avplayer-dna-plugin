@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|  
     s.name              = 'AVPlayerDNAPlugin'
-    s.version           = '1.1.3'
+    s.version           = '1.1.4'
     s.swift_version     = '4.2'
     s.summary           = 'Streamroot Distributed Network Architecture AVPlayer plugins, a new way to deliver large-scale OTT video'
     s.homepage          = 'https://github.com/streamroot/avplayer-dna-plugin'
@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
     s.source_files = 'PlayerDNAPlugin/Classes/*.swift'
     s.ios.deployment_target = '9.2'
     s.tvos.deployment_target = '10.2'
-    s.dependency 'StreamrootSDK', '~> 3.8.0'
+    s.dependency 'StreamrootSDK', '~> 3.9.0'
 end

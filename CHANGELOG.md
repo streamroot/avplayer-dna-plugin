@@ -5,6 +5,9 @@ This changelog's template come from [keepachangelog.com](http://keepachangelog.c
 
 ## Unreleased
 
+### Added
+- Dynmic buffer level
+
 ## [3.8.0] - 2019-1-18
 ### Added
 - Introduce AVPlayer Plugin
