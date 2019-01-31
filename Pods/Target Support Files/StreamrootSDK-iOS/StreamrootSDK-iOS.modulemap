@@ -1,0 +1,6 @@
+framework module StreamrootSDK {
+  umbrella header "StreamrootSDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
