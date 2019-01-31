@@ -3,6 +3,7 @@
 *.xcuserdatad
 build
 Carthage
+Pods
 
 ## Build generated
 build/
