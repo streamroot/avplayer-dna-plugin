@@ -211,6 +211,7 @@ extension AVPlayerDNAPlugin {
 	}
 }
 
+// MARK: - DNAClientDelegate
 extension AVPlayerDNAPlugin: DNAClientDelegate {
 	public func playbackTime() -> Double {
 		if let player = self.player {
@@ -239,14 +240,14 @@ extension AVPlayerDNAPlugin: DNAClientDelegate {
 	}
 
 	public func bufferTarget() -> Double {
-		if #available(iOS 10.0, *) {
+		if #available(iOS 10.0, tvOS 10.0, *) {
 			return self.player?.currentItem?.preferredForwardBufferDuration ?? 0
 		}
 		return 0.0
 	}
 
 	public func setBufferTarget(_ target: Double) {
-		if #available(iOS 10.0, *) {
+		if #available(iOS 10.0, tvOS 10.0, *) {
 			self.player?.currentItem?.preferredForwardBufferDuration = target
 		}
 	}

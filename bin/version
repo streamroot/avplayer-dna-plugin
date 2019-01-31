@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' PlayerDNAPlugin/Info.plist

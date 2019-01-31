@@ -33,7 +33,7 @@ platform :ios do
       repository_name: "streamroot/avplayer-dna-plugin",
       api_token: github_token,
       name: version,
-      tag_name: version,
+      tag_name: "v#{version}",
       description: changelog,
       commitish: "master"
     )
