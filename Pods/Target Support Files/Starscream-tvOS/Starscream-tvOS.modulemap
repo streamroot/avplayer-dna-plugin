@@ -1,6 +1,0 @@
-framework module Starscream {
-  umbrella header "Starscream-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

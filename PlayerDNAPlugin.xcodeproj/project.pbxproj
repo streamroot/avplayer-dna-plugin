@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FC8FC64A56DEC6700EB5415 /* Pods_AVPlayerDNAPlugin_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E519DD9E090AE6A690E339C /* Pods_AVPlayerDNAPlugin_iOS.framework */; };
-		A7E20040091A6A527F0E9FF1 /* Pods_AVPlayerDNAPlugin_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D69F9B789C65410E4DCF64 /* Pods_AVPlayerDNAPlugin_tvOS.framework */; };
 		D6B14AB3218498D4008949EC /* AVPlayerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B14AB2218498D4008949EC /* AVPlayerPlugin.swift */; };
 		D6B14AB4218498D4008949EC /* AVPlayerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B14AB2218498D4008949EC /* AVPlayerPlugin.swift */; };
 		D6DB315D2146ACB400403310 /* AVPlayerDNAPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DB31532146ACB300403310 /* AVPlayerDNAPlugin.framework */; };
@@ -22,6 +20,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D63AE3F9220465340034A223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31F897DD1F20DA6200764AD0;
+			remoteInfo = "StreamrootSDK-iOS";
+		};
+		D63AE3FB220465340034A223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31F897F91F20DA6200764AD0;
+			remoteInfo = "StreamrootSDK-IOS-Tests";
+		};
+		D63AE3FD220465340034A223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6A7087621BA7DC800225798;
+			remoteInfo = "StreamrootSDK-tvOS";
+		};
+		D63AE3FF220465340034A223 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D63B78A0206A94100044823C;
+			remoteInfo = "StreamrootSDK-tvOS-Tests";
+		};
 		D6DB315E2146ACB400403310 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6DB314A2146ACB300403310 /* Project object */;
@@ -39,13 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06D69F9B789C65410E4DCF64 /* Pods_AVPlayerDNAPlugin_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVPlayerDNAPlugin_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4053B1246692B6319ECA8125 /* Pods-AVPlayerDNAPlugin-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerDNAPlugin-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVPlayerDNAPlugin-tvOS/Pods-AVPlayerDNAPlugin-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		4E519DD9E090AE6A690E339C /* Pods_AVPlayerDNAPlugin_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVPlayerDNAPlugin_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5178808DA18E3CE06C3AF2CF /* Pods-AVPlayerDNAPlugin-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerDNAPlugin-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVPlayerDNAPlugin-iOS/Pods-AVPlayerDNAPlugin-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		9CDCB2E6BB488088A9239C10 /* Pods-AVPlayerDNAPlugin-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerDNAPlugin-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVPlayerDNAPlugin-iOS/Pods-AVPlayerDNAPlugin-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D695F00C21B49AAA001D143E /* StreamrootSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StreamrootSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D695F00E21B49AB2001D143E /* StreamrootSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StreamrootSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StreamrootSDK.xcodeproj; path = ../../StreamrootSDK.xcodeproj; sourceTree = "<group>"; };
 		D6B14AB2218498D4008949EC /* AVPlayerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerPlugin.swift; sourceTree = "<group>"; };
 		D6DB31532146ACB300403310 /* AVPlayerDNAPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVPlayerDNAPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DB31562146ACB300403310 /* AVPlayerDNAPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerDNAPlugin.h; sourceTree = "<group>"; };
@@ -58,7 +78,6 @@
 		D6DB317B2146AF9400403310 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		D6DB319E2146D9AD00403310 /* AVPlayerDNAPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVPlayerDNAPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DB31A62146D9AD00403310 /* AVPlayerDNAPlugin-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AVPlayerDNAPlugin-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFCD71ECA72A54E332F0F1C1 /* Pods-AVPlayerDNAPlugin-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerDNAPlugin-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVPlayerDNAPlugin-tvOS/Pods-AVPlayerDNAPlugin-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FC8FC64A56DEC6700EB5415 /* Pods_AVPlayerDNAPlugin_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E20040091A6A527F0E9FF1 /* Pods_AVPlayerDNAPlugin_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,14 +114,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D63AE3F2220465340034A223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D63AE3FA220465340034A223 /* StreamrootSDK.framework */,
+				D63AE3FC220465340034A223 /* StreamrootSDK-IOS-Tests.xctest */,
+				D63AE3FE220465340034A223 /* StreamrootSDK.framework */,
+				D63AE400220465340034A223 /* StreamrootSDK-tvOS-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D6DB31492146ACB300403310 = {
 			isa = PBXGroup;
 			children = (
+				D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */,
 				D6DB31552146ACB300403310 /* PlayerDNAPlugin */,
 				D6DB31602146ACB400403310 /* AVPlayerDNAPluginTests */,
 				D6DB31542146ACB300403310 /* Products */,
 				D6DB31722146AE4700403310 /* Frameworks */,
-				E7A254F40F2C82C1BF22F0AC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,25 +178,10 @@
 		D6DB31722146AE4700403310 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D695F00E21B49AB2001D143E /* StreamrootSDK.framework */,
-				D695F00C21B49AAA001D143E /* StreamrootSDK.framework */,
 				D6DB317B2146AF9400403310 /* AVKit.framework */,
 				D6DB31792146AF9000403310 /* AVFoundation.framework */,
-				4E519DD9E090AE6A690E339C /* Pods_AVPlayerDNAPlugin_iOS.framework */,
-				06D69F9B789C65410E4DCF64 /* Pods_AVPlayerDNAPlugin_tvOS.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E7A254F40F2C82C1BF22F0AC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CDCB2E6BB488088A9239C10 /* Pods-AVPlayerDNAPlugin-iOS.debug.xcconfig */,
-				5178808DA18E3CE06C3AF2CF /* Pods-AVPlayerDNAPlugin-iOS.release.xcconfig */,
-				DFCD71ECA72A54E332F0F1C1 /* Pods-AVPlayerDNAPlugin-tvOS.debug.xcconfig */,
-				4053B1246692B6319ECA8125 /* Pods-AVPlayerDNAPlugin-tvOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +210,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6DB31672146ACB400403310 /* Build configuration list for PBXNativeTarget "AVPlayerDNAPlugin-iOS" */;
 			buildPhases = (
-				B3E7C5C20F8B7AAE01E66886 /* [CP] Check Pods Manifest.lock */,
 				D6DB314E2146ACB300403310 /* Headers */,
 				D6DB314F2146ACB300403310 /* Sources */,
 				D6DB31502146ACB300403310 /* Frameworks */,
@@ -234,7 +246,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6DB31AF2146D9AD00403310 /* Build configuration list for PBXNativeTarget "AVPlayerDNAPlugin-tvOS" */;
 			buildPhases = (
-				2E057D7CC0001196DB20809E /* [CP] Check Pods Manifest.lock */,
 				D6DB31992146D9AD00403310 /* Headers */,
 				D6DB319A2146D9AD00403310 /* Sources */,
 				D6DB319B2146D9AD00403310 /* Frameworks */,
@@ -301,6 +312,12 @@
 			mainGroup = D6DB31492146ACB300403310;
 			productRefGroup = D6DB31542146ACB300403310 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D63AE3F2220465340034A223 /* Products */;
+					ProjectRef = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D6DB31522146ACB300403310 /* AVPlayerDNAPlugin-iOS */,
@@ -310,6 +327,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D63AE3FA220465340034A223 /* StreamrootSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StreamrootSDK.framework;
+			remoteRef = D63AE3F9220465340034A223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D63AE3FC220465340034A223 /* StreamrootSDK-IOS-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "StreamrootSDK-IOS-Tests.xctest";
+			remoteRef = D63AE3FB220465340034A223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D63AE3FE220465340034A223 /* StreamrootSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StreamrootSDK.framework;
+			remoteRef = D63AE3FD220465340034A223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D63AE400220465340034A223 /* StreamrootSDK-tvOS-Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "StreamrootSDK-tvOS-Tests.xctest";
+			remoteRef = D63AE3FF220465340034A223 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D6DB31512146ACB300403310 /* Resources */ = {
@@ -341,53 +389,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2E057D7CC0001196DB20809E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AVPlayerDNAPlugin-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3E7C5C20F8B7AAE01E66886 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AVPlayerDNAPlugin-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6DB314F2146ACB300403310 /* Sources */ = {
@@ -566,7 +567,6 @@
 		};
 		D6DB31682146ACB400403310 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CDCB2E6BB488088A9239C10 /* Pods-AVPlayerDNAPlugin-iOS.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -600,7 +600,6 @@
 		};
 		D6DB31692146ACB400403310 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5178808DA18E3CE06C3AF2CF /* Pods-AVPlayerDNAPlugin-iOS.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -670,7 +669,6 @@
 		};
 		D6DB31B02146D9AD00403310 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFCD71ECA72A54E332F0F1C1 /* Pods-AVPlayerDNAPlugin-tvOS.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -703,7 +701,6 @@
 		};
 		D6DB31B12146D9AD00403310 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4053B1246692B6319ECA8125 /* Pods-AVPlayerDNAPlugin-tvOS.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
