@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D6B14AB3218498D4008949EC /* AVPlayerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B14AB2218498D4008949EC /* AVPlayerPlugin.swift */; };
 		D6B14AB4218498D4008949EC /* AVPlayerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B14AB2218498D4008949EC /* AVPlayerPlugin.swift */; };
+		D6C519962208A69D00D375A2 /* StreamrootSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63AE3FE220465340034A223 /* StreamrootSDK.framework */; };
+		D6C519972208A6A500D375A2 /* StreamrootSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63AE3FA220465340034A223 /* StreamrootSDK.framework */; };
 		D6DB315D2146ACB400403310 /* AVPlayerDNAPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DB31532146ACB300403310 /* AVPlayerDNAPlugin.framework */; };
 		D6DB31622146ACB400403310 /* AVPlayerDNAPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DB31612146ACB400403310 /* AVPlayerDNAPluginTests.swift */; };
 		D6DB31642146ACB400403310 /* AVPlayerDNAPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DB31562146ACB300403310 /* AVPlayerDNAPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +50,20 @@
 			remoteGlobalIDString = D63B78A0206A94100044823C;
 			remoteInfo = "StreamrootSDK-tvOS-Tests";
 		};
+		D6C5198D2208A68500D375A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 508E4DB91C57A02900944255;
+			remoteInfo = "StreamrootSDK-iOS";
+		};
+		D6C519942208A68F00D375A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D63AE3F1220465340034A223 /* StreamrootSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D634585020650CAD00D2F666;
+			remoteInfo = "StreamrootSDK-tvOS";
+		};
 		D6DB315E2146ACB400403310 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6DB314A2146ACB300403310 /* Project object */;
@@ -85,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C519972208A6A500D375A2 /* StreamrootSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C519962208A69D00D375A2 /* StreamrootSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D6C5198E2208A68500D375A2 /* PBXTargetDependency */,
 			);
 			name = "AVPlayerDNAPlugin-iOS";
 			productName = AVPlayerDNAPlugin;
@@ -254,6 +273,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D6C519952208A68F00D375A2 /* PBXTargetDependency */,
 			);
 			name = "AVPlayerDNAPlugin-tvOS";
 			productName = "AVPlayerDNAPlugin-tvOS";
@@ -428,6 +448,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D6C5198E2208A68500D375A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "StreamrootSDK-iOS";
+			targetProxy = D6C5198D2208A68500D375A2 /* PBXContainerItemProxy */;
+		};
+		D6C519952208A68F00D375A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "StreamrootSDK-tvOS";
+			targetProxy = D6C519942208A68F00D375A2 /* PBXContainerItemProxy */;
+		};
 		D6DB315F2146ACB400403310 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D6DB31522146ACB300403310 /* AVPlayerDNAPlugin-iOS */;
