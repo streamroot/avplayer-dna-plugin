@@ -13,7 +13,7 @@ import StreamrootSDK
 @objc public class AVPlayerDNAPlugin: NSObject, StreamrootPlugin {
 	public var manifestUrl: URL
 
-	public var config: DNAConfig?
+	public var config: DNAConfig
 
 	public internal(set) var dnaClient: DNAClient?
 
@@ -24,12 +24,20 @@ import StreamrootSDK
 	fileprivate var qosModule: QosModule
 
 	fileprivate var playbackState: PlaybackState
+  
+  private var key: String {
+    return self.config.streamrootKey
+  }
+  
+  private var latency: Int {
+    return self.config.latency ?? 0
+  }
 
 	/// Plugin constructor
 	/// - parameter manifestUrl: the url object of the manifest.
 	/// - parameter config: custom configuration
 	///
-	public init(manifestUrl: URL, config: DNAConfig? = nil) {
+	public init(manifestUrl: URL, config: DNAConfig) {
 		self.manifestUrl = manifestUrl
 		self.config = config
 		qosModule = StreamrootQosModule(moduleType: .plugin)
@@ -40,35 +48,33 @@ import StreamrootSDK
 	/// Start the streamroot server
 	/// - returns: Local manifest URL
 	public func start() throws -> URL? {
-		var builder = DNAClient.builder().dnaClientDelegate(self)
-		if let config = config {
-			if let key = config.streamrootKey, !key.isEmpty {
-				builder = builder.streamrootKey(key)
-			}
-
-			if let latency = config.latency, latency > 0 {
-				builder = builder.latency(latency)
-			}
-
-			if let backendHost = config.backendHost {
-				builder = builder.backendHost(backendHost)
-			}
-
-			if let contentId = config.contentId, !contentId.isEmpty {
-				builder = try builder.contentId(contentId)
-			}
-
-			if let property = config.property, !property.isEmpty {
-				builder = builder.property(property)
-			}
-		}
-		builder = builder.qosModule(qosModule)
-		dnaClient = try builder.start(manifestUrl)
-		guard let manifest = dnaClient?.manifestLocalURLPath else {
-			return manifestUrl
-		}
-		return URL(string: manifest)
-	}
+    var builder = DNAClient.builder().dnaClientDelegate(self)
+    if !key.isEmpty {
+      builder = builder.streamrootKey(key)
+    }
+    
+    if let latency = config.latency, latency > 0 {
+      builder = builder.latency(latency)
+    }
+    
+    if let backendHost = config.backendHost {
+      builder = builder.backendHost(backendHost)
+    }
+    
+    if let contentId = config.contentId, !contentId.isEmpty {
+      builder = try builder.contentId(contentId)
+    }
+    
+    if let property = config.property, !property.isEmpty {
+      builder = builder.property(property)
+    }
+    builder = builder.qosModule(qosModule)
+    dnaClient = try builder.start(manifestUrl)
+    guard let manifest = dnaClient?.manifestLocalURLPath else {
+      return manifestUrl
+    }
+    return URL(string: manifest)
+  }
 
 	/// Link the plugin to the player
 	@objc public func linkPlayer(_ player: AVPlayer?) throws {
