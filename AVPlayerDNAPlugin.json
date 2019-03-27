@@ -1,5 +1,5 @@
 {
-    "1.0": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.5/AVPlayerDNAPlugin.framework.zip",
+    "1.0": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.6/AVPlayerDNAPlugin.framework.zip",
     "1.0.0": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.0.0/AVPlayerDNAPlugin.framework.zip",
     "1.1": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.1/AVPlayerDNAPlugin.framework.zip",
     "1.1.0": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.0/AVPlayerDNAPlugin.framework.zip",
@@ -7,5 +7,6 @@
     "1.1.2": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.2/AVPlayerDNAPlugin.framework.zip",
     "1.1.3": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.3/AVPlayerDNAPlugin.framework.zip",
     "1.1.4": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.4/AVPlayerDNAPlugin.framework.zip",
-    "1.1.5": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.5/AVPlayerDNAPlugin.framework.zip"
+    "1.1.5": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.5/AVPlayerDNAPlugin.framework.zip",
+    "1.1.6": "https://sdk.streamroot.io/ios/AVPlayerDNAPlugin/1.1.6/AVPlayerDNAPlugin.framework.zip"
 }

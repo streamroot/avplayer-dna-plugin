@@ -1,13 +1,13 @@
 PODS:
-  - Sentry (4.1.1):
-    - Sentry/Core (= 4.1.1)
-  - Sentry/Core (4.1.1)
-  - Starscream (3.0.6)
-  - StreamrootSDK (3.8.0):
-    - Sentry (= 4.1.1)
-    - Starscream (= 3.0.6)
-    - SwiftProtobuf (= 1.2)
-  - SwiftProtobuf (1.2.0)
+  - Sentry (4.3.1):
+    - Sentry/Core (= 4.3.1)
+  - Sentry/Core (4.3.1)
+  - Starscream (3.1.0)
+  - StreamrootSDK (3.10.2):
+    - Sentry (= 4.3.1)
+    - Starscream (= 3.1.0)
+    - SwiftProtobuf (= 1.4.0)
+  - SwiftProtobuf (1.4.0)
 
 DEPENDENCIES:
   - StreamrootSDK
@@ -20,11 +20,11 @@ SPEC REPOS:
     - SwiftProtobuf
 
 SPEC CHECKSUMS:
-  Sentry: c9d0543c7223ddec036027f4c7391ea057ba9856
-  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
-  StreamrootSDK: 53551a024a53521fcfbaaf21445e6dc7d1e672b5
-  SwiftProtobuf: 91a9856079044ef4ec762b2344c763cd9e5a73c1
+  Sentry: 5267d493a398663538317e4dcc438c12c66202ed
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  StreamrootSDK: 8f49e39d3d60ac5c647fc055758d02279300505e
+  SwiftProtobuf: b06646ed6cdcfc3fecd074c6000fe0c413140e4f
 
 PODFILE CHECKSUM: 653f9a810ae92aef4ed13bac8c0964563b9702b2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

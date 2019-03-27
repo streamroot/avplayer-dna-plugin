@@ -42,3 +42,5 @@ vendors/WebRTC/iOS/librtc_sdk_objc.a
 docs/*
 
 .build/
+
+Pods/*
