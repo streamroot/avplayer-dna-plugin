@@ -3,5 +3,3 @@
 base_dir=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)
 carthage build --no-skip-current --platform iOS,tvOS --configuration Release
 carthage archive AVPlayerDNAPlugin --output AVPlayerDNAPlugin.framework.zip
-aws s3 cp AVPlayerDNAPlugin.framework.zip s3://sdk.streamroot.io/ios/AVPlayerDNAPlugin/$($base_dir/version)/AVPlayerDNAPlugin.framework.zip --acl public-read
-aws s3 cp AVPlayerDNAPlugin.json s3://sdk.streamroot.io/ios/AVPlayerDNAPlugin.json --acl public-read
