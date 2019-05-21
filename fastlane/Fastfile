@@ -32,8 +32,8 @@ platform :ios do
     github_release = set_github_release(
       repository_name: "streamroot/avplayer-dna-plugin",
       api_token: github_token,
-      name: version,
-      tag_name: "v#{version}",
+      name: "v#{version}",
+      tag_name: version,
       description: changelog,
       commitish: "master"
     )
