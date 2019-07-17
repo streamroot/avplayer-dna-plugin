@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
     s.source_files = 'PlayerDNAPlugin/Classes/*.swift'
     s.ios.deployment_target = '10.2'
     s.tvos.deployment_target = '10.2'
-    s.dependency 'StreamrootSDK', '~> 3.1.0'
+    s.dependency 'StreamrootSDK', '~> 3.12.0'
 end

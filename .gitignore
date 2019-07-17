@@ -1,6 +1,5 @@
 .DS_Store
 .idea
-*.xcuserdatad
 Carthage
 Pods
 

@@ -1,4 +1,4 @@
-binary "https://sdk.streamroot.io/ios/StreamrootSDK.json" "3.11"
+binary "https://sdk.streamroot.io/ios/StreamrootSDK.json" "3.13"
 github "apple/swift-protobuf" "1.5.0"
 github "daltoniam/Starscream" "3.1.0"
 github "getsentry/sentry-cocoa" "4.3.4"
