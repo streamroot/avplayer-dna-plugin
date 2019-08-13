@@ -40,7 +40,7 @@ import StreamrootSDK
     public init(manifestUrl: URL, config: DNAConfig) {
         self.manifestUrl = manifestUrl
         self.config = config
-        qosModule = StreamrootQosModule(moduleType: .plugin)
+        qosModule = DNAQos.module(type: .plugin)
         playbackState = .idle
         super.init()
     }
