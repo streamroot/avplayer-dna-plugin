@@ -13,7 +13,7 @@ import StreamrootSDK
     /// Unique Streamroot Key that we assigned to you,
     /// make sure it's identical to the one provided in the Account section of your dashboard
     // Can be set in the Plist or int the DNAConfig
-    public var streamrootKey: String
+    public var streamrootKey: String?
 
     /// Identifier used by the Streamroot backend to match peers who watch the same content.
     public var contentId: String?
@@ -25,7 +25,7 @@ import StreamrootSDK
     /// Used to change the place of the Streamroot backend. You must mention the protocol used, either "HTTP" or "HTTPS".
     public var backendHost: URL?
 
-    public init(streamrootKey: String,
+    public init(streamrootKey: String? = nil,
                 contentId: String? = nil,
                 latency: Int = 0,
                 property: String? = nil,

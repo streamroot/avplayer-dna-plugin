@@ -25,10 +25,6 @@ import StreamrootSDK
 
     fileprivate var playbackState: PlaybackState
 
-    private var key: String {
-        return config.streamrootKey
-    }
-
     private var latency: Int {
         return config.latency ?? 0
     }
@@ -49,8 +45,8 @@ import StreamrootSDK
     /// - returns: Local manifest URL
     public func start() throws -> URL? {
         var builder = DNAClient.builder().dnaClientDelegate(self)
-        if !key.isEmpty {
-            builder = builder.streamrootKey(key)
+        if let srkey = config.streamrootKey, !srkey.isEmpty {
+            builder = builder.streamrootKey(srkey)
         }
 
         if let latency = config.latency, latency > 0 {
