@@ -75,9 +75,6 @@ import StreamrootSDK
     /// Link the plugin to the player
     @objc public func linkPlayer(_ player: AVPlayer?) throws {
         self.player = player
-        if #available(iOS 10.0, tvOS 10.0, *) {
-            self.player?.currentItem?.preferredForwardBufferDuration = dnaClient?.bufferTarget ?? 0
-        }
         guard let playerItem = player?.currentItem else { return }
 
         NotificationCenter.default.addObserver(self, selector: #selector(handlePlayedToEndFail),
