@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'AVPlayerDNAPlugin'
-    s.version           = '1.1.15'
+    s.version           = '1.1.16'
     s.swift_version     = '5.1'
     s.summary           = 'Streamroot Distributed Network Architecture AVPlayer plugins, a new way to deliver large-scale OTT video'
     s.homepage          = 'https://www.streamroot.io/'
