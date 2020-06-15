@@ -24,17 +24,25 @@ import StreamrootSDK
     public var property: String?
     /// Used to change the place of the Streamroot backend. You must mention the protocol used, either "HTTP" or "HTTPS".
     public var backendHost: URL?
+  
+   /// Used when the main application is already implementing Sentry.
+   /// The Streamroot SDK will fall back on a custom implementation based on Sentry Hubs.
+   /// This will allow us to avoid collisions in the Sentry accounts.
+   /// cf: https://docs.sentry.io/enriching-error-data/scopes/?platform=swift
+   public var useSentryHub: Bool = false
 
     public init(streamrootKey: String? = nil,
                 contentId: String? = nil,
                 latency: Int = 0,
                 property: String? = nil,
-                backendHost: URL? = nil) {
+                backendHost: URL? = nil,
+                useSentryHub: Bool = false) {
         self.streamrootKey = streamrootKey
         self.contentId = contentId
         self.latency = latency
         self.property = property
         self.backendHost = backendHost
+        self.useSentryHub = useSentryHub
     }
 }
 

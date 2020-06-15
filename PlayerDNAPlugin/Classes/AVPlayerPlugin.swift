@@ -65,6 +65,7 @@ import StreamrootSDK
             builder = builder.property(property)
         }
         builder = builder.qosModule(qosModule)
+        builder = builder.useSentryHub(config.useSentryHub)
         dnaClient = try builder.start(manifestUrl)
         guard let manifest = dnaClient?.manifestLocalURLPath else {
             return manifestUrl
