@@ -9,7 +9,7 @@ def podCommon
 end
 
 target 'AVPlayerDNAPlugin-iOS' do
-  platform :ios, '9.2'
+  platform :ios, '10.2'
   podCommon
 end
 
