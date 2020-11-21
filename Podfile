@@ -25,6 +25,7 @@ post_install do |installer|
       config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
       config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
       config.build_settings['ENABLE_BITCODE'] = "YES"
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
       if config.name == "Debug"
         cflags = config.build_settings['OTHER_CFLAGS'] || ['$(inherited)']
         cflags << '-fembed-bitcode-marker'
