@@ -15,5 +15,12 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.2'
     s.tvos.deployment_target = '10.2'
     s.dependency 'StreamrootSDK', '~> 3.25.1'
-    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+    s.pod_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+        'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = {
+        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+        'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64'
+    }
 end
